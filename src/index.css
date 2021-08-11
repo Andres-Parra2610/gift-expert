@@ -5,9 +5,43 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  width: 1200px;
+  margin: auto;
+}
+
+input{
+  width: 60%;
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.card{
+  border: solid 1px gray;
+  border-radius: 5px;
+  width: max-content;
+  height: max-content;
+}
+
+.card p{
+  text-align: center;
+}
+
+.card img{
+  width: 300px;
+  display: block;
+  border-radius: 0 0 5px 5px;
+}
+
+@media screen and (max-width: 862px){
+  .container{
+    width: 700px;
+  }
 }
